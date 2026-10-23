@@ -1,0 +1,30 @@
+#form-cadastro {
+/* height: 500px; */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.input-texto {
+display: flex;
+flex-direction: column;
+gap: 5px;
+    min-width: 200px;
+}
+.input-texto > label {
+color: rgba(0, 0, 0, 0.787);
+}   
+}   
+
+
+.funcionario-solteiro {
+    color: red
+}
+.funcionario-casado {
+    color:green
+}
+.funcionario-divorciado {
+    background-color: black;
+    color: azure;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MEU RH</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<form id="form-cadastro" class="form-padrao" onsubmit="cadastrar(event)">
+
+<div class="input-texto">
+<label for="nome">Nome: </label>
+<input id="nome" placeholder="Digite o nome">
+</div>
+
+<div class="input-texto">
+<label for="cargo">Cargo: </label>
+            <input id="cargo" placeholder="Cargo">
+            <select id="cargo">
+                <option value="Vendedor">VENDEDOR</option>
+                <option value="Gerente">GERENTE</option>
+                <option value="Analista">ANALISTA</option>
+            </select>
+</div>
+
+<div class="input-texto">
+<label for="email">Email: </label>
+<input id="email" type="email" placeholder="Email">
+</div>
+
+        <div class="input-texto">
+            <label for="cpf">CPF: </label>
+            <input  id="cpf" placeholder="CPF">
+        </div>
+
+        <div class="input-texto">
+            <label for="tel">Telefone: </label>
+            <input id="tel" type="tel" placeholder="Telefone">
+        </div>
+
+        <div class="input-texto">
+            <span>Estado Civil: </span>
+            <label>Solteiro <input value="Solteiro" name="estado-civil" type="radio" ></label>
+            <label>Casado <input value="Casado" name="estado-civil" type="radio" checked></label>
+            <label>Divorciado <input value="Divorciado" name="estado-civil" type="radio"></label>
+        </div>
+
+<button type="submit">CADASTRAR</button>
+
+</form>

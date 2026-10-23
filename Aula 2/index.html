@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Cadastro de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Adicionar Tarefa</h2>
+        <form id="form-tarefa" onsubmit="cadastrarTarefa(event)">
+            <div class="campo">
+                <label for="titulo">Título da Tarefa:</label>
+                <input type="text" id="titulo" placeholder="Digite o título da tarefa">
+            </div>
+            <button type="submit">ADICIONAR</button>
+        </form>
+
+        <h2>Lista Tarefas</h2>
+
+        <ul id="lista-tarefas"></ul>
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

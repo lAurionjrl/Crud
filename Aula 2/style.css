@@ -1,0 +1,19 @@
+.botao-completar {
+    color: green;
+}
+
+.botao-cancelar {
+    color: red
+}
+
+.tarefa-completo {
+    background-color: green;
+}
+
+.tarefa-cancelada {
+    background-color: red;
+}
+
+.tarefa-pendente {
+    background-color:  yellow;
+}

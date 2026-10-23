@@ -1,0 +1,145 @@
+/* Importação de fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+.campo {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3182ce;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b6cb0;
+}
+
+/* Lista de Produtos */
+#lista-produtos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#lista-produtos li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    border: 1px solid #edf2f7;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Contêiner para alinhar os botões lado a lado */
+.acoes-produto {
+    display: flex;
+    gap: 8px;
+}
+
+/* Estilo Base dos Botões */
+#lista-produtos button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Botão Editar */
+#lista-produtos button.btn-editar {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+#lista-produtos button.btn-editar:hover {
+    background-color: #9ae6b4;
+    color: #1a4731;
+}
+
+/* Botão Remover */
+#lista-produtos button.btn-remover {
+    background-color: #fed7d7;
+    color: #c53030;
+}
+
+#lista-produtos button.btn-remover:hover {
+    background-color: #feb2b2;
+    color: #9b2c2c;
+}
